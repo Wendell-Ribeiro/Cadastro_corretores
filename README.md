@@ -1,36 +1,54 @@
-# Sistema de Cadastro de Corretores 🧾
+# 📋 Sistema de Cadastro de Corretores
 
-Este projeto consiste em um sistema web simples para cadastro, edição, listagem e exclusão de corretores. Ele foi desenvolvido como parte de um teste prático com foco em PHP, MySQL, Bootstrap e XAMPP.
+Este projeto é um sistema simples de cadastro de corretores, desenvolvido em PHP com MySQL, utilizando HTML5, CSS3, JavaScript e Bootstrap. Ele permite **inserir, editar, listar e excluir corretores** de um banco de dados.
 
-## 🔧 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
 - PHP
-- MySQL (via phpMyAdmin ou MySQL Workbench)
+- MySQL (phpMyAdmin ou MySQL Workbench)
 - HTML5 / CSS3
-- Bootstrap 5
 - JavaScript
-- XAMPP (Apache + MySQL)
+- Bootstrap 5
+- XAMPP (para ambiente local)
 
-## 📂 Estrutura de Arquivos
+## 📁 Estrutura do Projeto
 
-- `index.html` — Página inicial com formulário para cadastrar corretores e tabela para listagem.
-- `processa.php` — Responsável por processar o envio do formulário e salvar no banco de dados.
-- `editar.php` — Permite editar os dados de um corretor.
-- `excluir.php` — Responsável por excluir um corretor do sistema.
-- `corretores_db.sql` — Script de criação do banco de dados e tabela.
 
-## 🗃️ Banco de Dados
+📦 cadastro_corretores ├── index.php # Página inicial com listagem 
+├── processa.php # Processa os dados do formulário ├── editar.php # Edição dos dados do corretor
+├── excluir.php # Exclusão de um corretor ├── conexao.php # Conexão com o banco de dados └── banco/corretores_db.sql # Script SQL para criação do banco
 
-O banco de dados utilizado se chama `corretores_db` e possui uma tabela chamada `corretores` com os seguintes campos:
 
-- `id` (INT, AUTO_INCREMENT, PRIMARY KEY)
-- `nome` (VARCHAR)
-- `email` (VARCHAR)
-- `telefone` (VARCHAR)
-- `creci` (VARCHAR)
+## 🧠 Funcionalidades
 
-## 🚀 Como Executar Localmente
+- ✅ Cadastro de novos corretores
+- ✅ Edição de corretores existentes
+- ✅ Exclusão de corretores
+- ✅ Listagem de corretores cadastrados
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/SEU_USUARIO/cadastro_corretores.git
+
+## 🛠 Banco de Dados
+
+- Nome do banco: `corretores_db`
+- Tabela principal: `corretores`
+- Campos da tabela:
+- `id` (int, auto_increment, chave primária)
+- `nome`
+- `email`
+- `telefone`
+- `creci`
+- `cidade`
+- `uf`
+
+## 📌 Observações
+
+- Este projeto foi desenvolvido como teste prático para fins acadêmicos e profissionais.
+- Pode ser adaptado e expandido para incluir autenticação de usuários, paginação, upload de arquivos e muito mais.
+
+## 🧑‍💻 Autor
+
+**Wendell Gama Ribeiro**  
+Recém-formado em Sistemas de Informação, apaixonado por tecnologia, dados e inteligência artificial.  
+Conhecimentos em PHP, HTML5, CSS3, JavaScript, MySQL e XAMPP.
+
+---
